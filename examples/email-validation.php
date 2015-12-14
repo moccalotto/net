@@ -6,6 +6,6 @@ require '../vendor/autoload.php';
 
 $email = json_decode(file_get_contents('../composer.json'))->authors[0]->email;
 
-$mc = new MailChecker('moccalotto@gmail.com', 'example.com');
+$mc = new MailChecker('test@example.com', 'example.com');
 
 print_r($mc->verify($email));
